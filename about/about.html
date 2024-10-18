@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* General body and HTML styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Background video styling */
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Container for the content */
+        .content-container {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            top: 5%; /* Moved text higher */
+        }
+
+        /* Title styling */
+        h1 {
+            color: white; /* Title color is now white */
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Hover effect for heading */
+        h1:hover {
+            filter: brightness(1.5); /* Increases brightness on hover */
+            text-shadow: 0px 0px 15px rgba(255, 255, 255, 1); /* Highlight with stronger glow */
+        }
+
+        /* Box styling for text */
+        .text-box {
+            width: 60%;
+            margin: 0 auto; /* Center the box */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Glowing box effect */
+        }
+
+        /* Paragraph text styling */
+        p {
+            color: silver; /* Change text color to silver */
+            font-size: 20px;
+            font-weight: 400;
+            text-align: left; /* Left align paragraphs */
+            line-height: 1.6;
+            margin-bottom: 15px;
+            transition: color 0.3s, transform 0.3s; /* Smooth transition for effects */
+        }
+
+        /* Dynamic hover effect on paragraphs */
+        p:hover {
+            color: white; /* Changes to white on hover */
+            transform: scale(1.05); /* Slightly enlarge text */
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); /* Add glow effect */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Background video -->
+    <video src="about_video.mp4" muted autoplay loop></video>
+
+    <!-- Content container with title and text box -->
+    <div class="content-container">
+        <h1>SLIET Mentorship Platform</h1>
+        <div class="text-box">
+            <p>
+                Mentorship is a powerful tool for guiding students through their academic and career journeys. With SLIET’s focus on nurturing talent, a mentorship platform creates new opportunities by connecting SLIET faculty members with students who need career advice, academic support, or skill-building guidance.
+            </p>
+            <p>
+                This dedicated mentorship website allows students to book one-on-one sessions with faculty mentors, fostering smooth communication and personalized guidance within the SLIET community. The platform facilitates interaction and continuous support for students in navigating their academic and professional paths.
+            </p>
+            <p>
+                This initiative strengthens student-faculty interactions, enhancing both personal and professional growth for students at SLIET, ensuring they receive the guidance they need to succeed.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIET Mentorship Platform</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Full-screen video background */
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            filter: brightness(50%);
+        }
+
+        /* Container for the main content */
+        .content-container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            top: 20%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Heading styling */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            position: relative;
+            color: #fff;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+            animation: shineText 3s infinite alternate;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            position: relative;
+            color: #fff;
+            transition: color 0.5s ease, text-shadow 0.5s ease;
+        }
+
+        /* Dynamic shining effect when hovering */
+        .content-container:hover p {
+            color: #FFD700; /* Gold color when hovered */
+            text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+        }
+
+        .content-container:hover h1 {
+            color: #FFD700;
+            text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+        }
+
+        /* Keyframe animation for fade-in */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Keyframe for a subtle text-shining effect */
+        @keyframes shineText {
+            0% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+            }
+            100% {
+                text-shadow: 0 0 30px #FFD700, 0 0 40px #FFD700;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <video src="./about_video_1.mp4" muted autoplay loop></video>
+
+   
+    <div class="content-container">
+        <h1>SLIET Mentorship Platform</h1>
+        <p>
+            Mentorship is a key element in guiding students through their academic and career paths, providing valuable 
+            support and direction. At SLIET, we are committed to nurturing talent, and a mentorship platform is being 
+            developed to create new opportunities for students. This platform will serve as a bridge between SLIET 
+            faculty and students, offering personalized guidance and support. Whether students are seeking career 
+            advice, academic assistance, or skill-building guidance, the platform will enable them to connect with 
+            faculty mentors who can offer their expertise.
+        </p>
+        <p>
+            The mentorship website will allow students to book one-on-one sessions with faculty mentors based on their 
+            availability, ensuring convenient and effective communication. By fostering this connection, the platform 
+            will promote a stronger, more collaborative relationship between students and faculty, facilitating academic
+             and career growth. Through this initiative, SLIET aims to enhance student development, both personally and 
+             professionally, by providing continuous support from experienced mentors. This platform will play a crucial 
+             role in enriching the student experience and driving success in their academic and career endeavors.
+        </p>
+    </div>
+
+</body>
+</html-->
